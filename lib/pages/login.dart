@@ -17,6 +17,7 @@ class _LoginPageState extends State<LoginPage> {
         fit: StackFit.expand,
         children: <Widget>[
           SingleChildScrollView(
+            scrollDirection: Axis.vertical,
             child:Padding(
                   padding: EdgeInsets.only(left: 28.0, right: 28.0, top: 60.0),
               child: Column(
@@ -92,6 +93,7 @@ class FormCard extends StatelessWidget {
         padding: EdgeInsets.only(left: 16.0, top: 16.0, right: 16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          
           children: <Widget>[
             SizedBox(
                     height: MediaQuery.of(context).size.height*0.03,
@@ -110,7 +112,7 @@ class FormCard extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 30,
+              height:MediaQuery.of(context).size.height*0.03,
             ),
             Text(
               'Password',
@@ -127,7 +129,7 @@ class FormCard extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 35,
+              height: MediaQuery.of(context).size.height*0.03,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
